@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# View the live site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+See the live version of this app [here] (http://raduliviu.github.io/yelp-clone)
 
 ## Available Scripts
 
