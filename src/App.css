@@ -36,3 +36,10 @@ header {
 #searchButton {
     padding: 0.3rem;
 }
+
+.resultCard {
+    display: flex;
+    margin: 10px auto;
+    width: 60%;
+    background-color: #88fac1;
+}

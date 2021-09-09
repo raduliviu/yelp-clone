@@ -9,7 +9,7 @@ function App() {
       restaurant_name: "Vapiano",
       tag: { 
         id: 1, 
-        name: "Asian"
+        name: "Italian"
       },
       city: {
         id: 2, 
@@ -62,20 +62,26 @@ function App() {
   ]
   const [searchResults, setSearchResults] = useState(initialData)
 
-  const getData = async () => {
-    let jsonResponse = { error: "unknown" };
-    let url = ``
-    try {
-      const response = await fetch(url + encodeURI() + '&page=', { cache: 'no-cache' })
-      if (response.ok) {
-        jsonResponse = await response.json()
+  useEffect(()=>{
+    const getData = async () => {
+      let jsonResponse = { error: "unknown" };
+      let url = `https://mini-yelp-group2.herokuapp.com/restaurants`
+      try {
+        const response = await fetch(url, { cache: 'no-cache' })
+        if (response.ok) {
+          jsonResponse = await response.json()
+          setSearchResults(jsonResponse)
+        }
+      } catch (error) {
+        console.log(error);
+        jsonResponse.error = error.message
       }
-    } catch (error) {
-      console.log(error);
-      jsonResponse.error = error.message
+      return jsonResponse
     }
-    return jsonResponse
-  }
+    getData()
+  }, [])
+
+
 
   return (
     <div className="App">
