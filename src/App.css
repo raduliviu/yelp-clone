@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    list-style-type: none;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -42,4 +43,9 @@ header {
     margin: 10px auto;
     width: 60%;
     background-color: #88fac1;
+}
+
+.resultCardName {
+    font-size: 1.5rem;
+    padding: 0.5rem;
 }
