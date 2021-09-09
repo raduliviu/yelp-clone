@@ -3,9 +3,9 @@ import Searchbar from "./Searchbar"
 
 export default function Header() {
     return (
-        <div>
-            <h1>Yelp</h1>
+        <header>
+            <h1 id="siteTitle">Yelp</h1>
             <Searchbar />
-        </div>
+        </header>
     )
 }

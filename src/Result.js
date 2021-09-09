@@ -1,12 +1,11 @@
 import React from "react";
 
-export default function Result() {
+export default function Result(props) {
     return (
-        <div>
+        <li>
             <img src="" alt=""></img>
-            <p>Restaurant title</p>
-            <p>Restaurant type</p>
-            <p>Restaurant price</p>
-        </div>
+            <p>{props.result.restaurant_name}</p>
+            <p>{props.result.tag.name}</p>
+        </li>
     )
 }

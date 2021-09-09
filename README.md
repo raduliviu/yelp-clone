@@ -1,6 +1,6 @@
 # View the live site
 
-See the live version of this app [here] (http://raduliviu.github.io/yelp-clone)
+See the live version of this app [here](http://raduliviu.github.io/yelp-clone)
 
 ## Available Scripts
 
