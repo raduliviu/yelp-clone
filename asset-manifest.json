@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/yelp-clone/static/css/main.80938d93.chunk.css",
-    "main.js": "/yelp-clone/static/js/main.77d6b855.chunk.js",
-    "main.js.map": "/yelp-clone/static/js/main.77d6b855.chunk.js.map",
+    "main.css": "/yelp-clone/static/css/main.b383a0bb.chunk.css",
+    "main.js": "/yelp-clone/static/js/main.eb998c3c.chunk.js",
+    "main.js.map": "/yelp-clone/static/js/main.eb998c3c.chunk.js.map",
     "runtime-main.js": "/yelp-clone/static/js/runtime-main.deb61fb1.js",
     "runtime-main.js.map": "/yelp-clone/static/js/runtime-main.deb61fb1.js.map",
     "static/js/2.c909b4e0.chunk.js": "/yelp-clone/static/js/2.c909b4e0.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.5b55ad87.chunk.js": "/yelp-clone/static/js/3.5b55ad87.chunk.js",
     "static/js/3.5b55ad87.chunk.js.map": "/yelp-clone/static/js/3.5b55ad87.chunk.js.map",
     "index.html": "/yelp-clone/index.html",
-    "static/css/main.80938d93.chunk.css.map": "/yelp-clone/static/css/main.80938d93.chunk.css.map",
+    "static/css/main.b383a0bb.chunk.css.map": "/yelp-clone/static/css/main.b383a0bb.chunk.css.map",
     "static/js/2.c909b4e0.chunk.js.LICENSE.txt": "/yelp-clone/static/js/2.c909b4e0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.deb61fb1.js",
     "static/js/2.c909b4e0.chunk.js",
-    "static/css/main.80938d93.chunk.css",
-    "static/js/main.77d6b855.chunk.js"
+    "static/css/main.b383a0bb.chunk.css",
+    "static/js/main.eb998c3c.chunk.js"
   ]
 }
