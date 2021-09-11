@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams, NavLink } from "react-router-dom";
+import Map from "./Map"
 
 export default function DetailsPage(props) {
     const { id } = useParams();
@@ -16,6 +17,7 @@ export default function DetailsPage(props) {
             <p>Restaurant city: {restaurantData.city.name}</p>
             <p>Restaurant phone: {restaurantData.phone}</p>
             <p>Restaurant website: {restaurantData.website}</p>
+            <Map lat={restaurantData.lat} lng={restaurantData.lng}/>
         </div>
     )
 }

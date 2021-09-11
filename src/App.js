@@ -18,8 +18,8 @@ function App() {
         name: "Berlin"
       },
       price_range: "expensive",
-      lat: 35.00,
-      lnt: 77.009,
+      lat: 52.51295712182467,
+      lng: 13.391373237178277,
       phone: "1234567",
       image: "https://blablabla.com",
       rating: "5/10",
@@ -36,8 +36,8 @@ function App() {
         name: "Berlin"
       },
       price_range: "cheap",
-      lat: 12344.00,
-      lnt: 55.009,
+      lat: 52.5145872638687,
+      lng: 13.46038104530701,
       phone: "1234567",
       image: "https://blablabla.com",
       rating: "8/10",
@@ -54,8 +54,8 @@ function App() {
         name: "Berlin"
       },
       price_range: "cheap",
-      lat: 12344.00,
-      lnt: 55.009,
+      lat: 52.48981395843291,
+      lng: 13.428881634837806,
       phone: "1234567",
       image: "https://blablabla.com",
       rating: "10/10",
@@ -72,8 +72,8 @@ function App() {
         name: "Berlin"
       },
       price_range: "medium",
-      lat: 12344.00,
-      lnt: 55.009,
+      lat: 52.54458123510735,
+      lng: 13.411456517998799,
       phone: "1234567",
       image: "https://blablabla.com",
       rating: "7/10",
@@ -85,9 +85,9 @@ function App() {
   useEffect(() => {
     const getData = async () => {
       let jsonResponse = { error: "unknown" };
-      let url = `https://mini-yelp-group2.herokuapp.com/restaurants`
+      let url = `http://mini-yelp-group2.herokuapp.com/restaurants`
       try {
-        const response = await fetch(url, { cache: 'no-cache' })
+        const response = await fetch(url, { cache: 'no-cache', mode: "no-cors" })
         if (response.ok) {
           jsonResponse = await response.json()
           setSearchResults(jsonResponse)
