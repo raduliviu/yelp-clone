@@ -21,7 +21,6 @@ export default function DetailsPage(props) {
                 </div>
             </div>
             <div className="restaurantMap"><Map lat={restaurantData.lat} lng={restaurantData.lnt} /></div>
-            
         </div>
     )
 }
