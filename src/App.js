@@ -31,12 +31,12 @@ function App() {
   }, [])
 
   const getCuisines = (cuisine) => {
-    let cuisineResults = searchResults.filter( restaurant => restaurant.tag.name === cuisine )
+    let cuisineResults = visibleResults.filter( restaurant => restaurant.tag.name === cuisine )
     setVisibleResults(cuisineResults)
   }
 
   const getCities = (cityname) => {
-    let cityResults = searchResults.filter( restaurant => restaurant.city.name === cityname )
+    let cityResults = visibleResults.filter( restaurant => restaurant.city.name === cityname )
     setVisibleResults(cityResults)
   }
 
