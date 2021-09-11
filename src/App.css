@@ -17,13 +17,17 @@ img {
 }
 
 header {
-    padding: 2rem;
     background-color: #fafa89;
 }
 
-.resultsList {
-    padding: 2rem;
+.resultsList, .detailsContainer {
     background-color: #8888fa
+}
+
+header, .resultsList, .detailsContainer {
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
 }
 
 #siteTitle {
@@ -37,6 +41,21 @@ header {
     align-items: center;
     justify-content: center;
     font-size: 2rem;
+    line-height: 2rem;
+}
+
+.searchBar form {
+    display: flex;
+}
+
+.searchBar select {
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: #e1e1fd;
+}
+
+.searchBar label, .searchBar select {
+    margin: 3px;
 }
 
 .searchInput {
@@ -59,8 +78,15 @@ header {
     background-color: #fafa89;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
-.resultCard img {
-    max-width: 25rem;
+.resultCard img, .resultCardText {
+    width: 50%;
+}
+
+.resultCardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .resultCardName {
@@ -75,6 +101,33 @@ header {
     justify-content: center;
 }
 
-.detailsContainer img {
-    max-width: 40rem;
+.detailsContainer h2 {
+    font-size: 3.2rem;
+    color: #8888fa;
+    background-color: #88fac1;
+    width: 100%;
+    padding: 1rem;
+}
+
+.detailsInfo {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.detailsInfo img, .restaurantInfo {
+    width: 50%;
+}
+
+.restaurantInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #88fac1;
+}
+
+.restaurantMap {
+    width: 100%;
+    box-sizing: border-box;
 }

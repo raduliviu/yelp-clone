@@ -4,7 +4,7 @@ export default function Map (props) {
     const centerLoc = [props.lat, props.lng];
     return (
         <MapContainer
-            style={{ height: "50vh", width: "50vw" }}
+            style={{ height: "50vh", width: "100%" }}
             center={centerLoc}
             zoom={13}
             scrollWheelZoom={false}
