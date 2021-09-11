@@ -11,6 +11,11 @@ a {
     color: black;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 header {
     padding: 2rem;
     background-color: #fafa89;
@@ -54,8 +59,22 @@ header {
     background-color: #fafa89;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
+.resultCard img {
+    max-width: 25rem;
+}
 
 .resultCardName {
     font-size: 1.5rem;
     padding: 0.5rem;
+}
+
+.detailsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.detailsContainer img {
+    max-width: 40rem;
 }
