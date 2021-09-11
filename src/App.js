@@ -85,7 +85,7 @@ function App() {
   useEffect(() => {
     const getData = async () => {
       let jsonResponse = { error: "unknown" };
-      let url = `http://mini-yelp-group2.herokuapp.com/restaurants`
+      let url = `https://mini-yelp-group2.herokuapp.com/restaurants`
       try {
         const response = await fetch(url)
         if (response.ok) {
